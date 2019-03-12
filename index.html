@@ -3,8 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>My website</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto" rel="stylesheet">
+<script type="text/javascript">
+  window.onscroll = function() {
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var currentScrollPos = window.pageYOffset;
+    if (currentScrollPos > 20) {
+      document.getElementById('nav').style.height = "50px";
+      document.getElementById('nav').style.lineHeight = "50px";
+      document.getElementById('nav').style.background = "white";
+      document.getElementById('nav').style.color = "black";
+    } else {
+      document.getElementById('nav').style.height = "100px";
+      document.getElementById('nav').style.lineHeight = "100px";
+      document.getElementById('nav').style.background = "none";
+      document.getElementById('nav').style.color = "white";
+    }
+  }
+</script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- transparent at first but becomes white as user scroolls -->
+    <header id="nav">
+      <div class="inner-width">
+        <h1 id="nav-title">Soren Gade</h1>
+      </div>
+    </header>
+
+    <div class="landing-page">
+      <div class="container">
+        <h1>Soren Gade</h1>
+        <p>Learning software engineering through investigation and testing. Documenting every step and lesson learnt on Youtube.</p>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <!--<div class="node">
+      <div class="inner-width">
+        <div class="desc-section">
+          <div class="desc-box">
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
+          <div class="desc-box">
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
+          <div class="desc-box">
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- List links -->
+    <footer>
+      <div class="inner-width">
+        <a href="#">Home</a>
+        <a href="#">Youtube</a>
+      </div>
+    </footer>
   </body>
 </html>
