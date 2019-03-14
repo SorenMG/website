@@ -2,26 +2,28 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soren Gade</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Roboto" rel="stylesheet">
-<script type="text/javascript">
-  window.onscroll = function() {
-    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-    var currentScrollPos = window.pageYOffset;
-    if (currentScrollPos > 20) {
-      document.getElementById('nav').style.height = "50px";
-      document.getElementById('nav').style.lineHeight = "50px";
-      document.getElementById('nav').style.background = "white";
-      document.getElementById('nav').style.color = "black";
-    } else {
-      document.getElementById('nav').style.height = "100px";
-      document.getElementById('nav').style.lineHeight = "100px";
-      document.getElementById('nav').style.background = "none";
-      document.getElementById('nav').style.color = "white";
-    }
-  }
-</script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <script type="text/javascript">
+      window.onscroll = function() {
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        if (window.pageYOffset > 20) {
+          document.getElementById('nav').style.height = "50px";
+          document.getElementById('nav').style.lineHeight = "50px";
+          document.getElementById('nav').style.background = "white";
+          document.getElementById('nav').style.color = "black";
+        } else {
+          document.getElementById('nav').style.height = "100px";
+          document.getElementById('nav').style.lineHeight = "100px";
+          document.getElementById('nav').style.background = "none";
+          document.getElementById('nav').style.color = "white";
+        }
+      }
+    </script>
   </head>
   <body>
     <header id="nav">
@@ -31,9 +33,9 @@
     </header>
 
     <div class="landing-page">
-      <div class="container">
-        <h1>Soren Gade</h1>
-        <p>Learning software engineering through investigation and testing. Documenting every step and lesson learnt on Youtube.</p>
+      <div class="container center">
+        <h1 class="landing-page-title">Soren Gade</h1>
+        <p class="landing-page-description">Learning software engineering through investigation and testing. Documenting every step and lesson learnt on Youtube.</p>
       </div>
     </div>
 
@@ -59,9 +61,9 @@
 
     <!-- List links -->
     <footer>
-      <div class="inner-width">
-        <a href="#">Home</a>
-        <a href="#">Youtube</a>
+      <div class="inner-width center-objects">
+        <a href="#" class="link">Home</a>
+        <a href="#" class="link">Youtube</a>
       </div>
     </footer>
   </body>
