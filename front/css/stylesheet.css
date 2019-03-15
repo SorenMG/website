@@ -42,34 +42,38 @@
   color: white;
 }
 
-/* Node definition */
-.node {
-  width: 100%;
-  height: 40vh;
-  background: #2c2d2d;
+/* Repoes container */
+.repos-container {
+  background: white;
+  height: 400px;
 }
 
-.node > .inner-width {
-  width: 100%;
-  position: relative;
-  transform: translate(0, -50%);
-  top: 50%;
-  max-width: 1200px;
+.repos-container > .inner-width {
+  /* position: relative;
   margin: auto;
-  overflow: hidden;
+  top: 50%;
+  transform: translate(0%, -50%); */
 }
 
-.node > .inner-width > .desc-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.repos-container > .inner-width h1 {
+  font-family: "Helvetica Neue";
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
-.node > .inner-width > .desc-section > .desc-box {
-  max-width: 33.33%;
-  color: #e5e5e5;
-  padding: 10px;
-  margin: 10px;
+.repos-container > .inner-width > table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.repos-container table th, td {
+  text-align: left;
+  padding: 16px 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: "Helvetica Neue";
 }
 
 /* Extra small devices (phones, up to 480px) */
